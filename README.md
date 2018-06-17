@@ -1,5 +1,5 @@
 # graphql-times-clone
-A clone of the New York Times movie reviews using GraphQL.
+A clone of the New York Times movie reviews using GraphQL, React, and Styled Components.
 
 -----------------------
 
@@ -7,5 +7,6 @@ A clone of the New York Times movie reviews using GraphQL.
 2. `npm install`
 3. `npm run dev`
 
-To see the site, go to `localhost:3000/` /n
+To see the site, go to `localhost:3000/`
+
 To test out GraphQL queries, go to `localhost:8080/graphiql`
