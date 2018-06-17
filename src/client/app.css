@@ -1,0 +1,10 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@font-face {
+	font-family: "Old English";
+	src: url('../../public/Old_English_Five.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,4 +1,4 @@
-import { Reviews } from './connectors';
+const { Reviews } = require('./connectors');
 
 const resolvers = {
   Query: {
@@ -10,9 +10,12 @@ const resolvers = {
     },
     allReviews() {
       return Reviews.getAll().then(results => (
-        results.map(({ multimedia, ...rest }) => ({
-          ...rest,
-          thumbnail: multimedia.src
+        results.map(({ multimedia, display_title, headline, byline, summary_short }) => ({
+          display_title: display_title,
+          thumbnail: multimedia.src,
+          headline: headline,
+          byline: byline,
+          summary_short: summary_short
         }))
       ))
     }
@@ -32,4 +35,4 @@ const resolvers = {
   },
 };
 
-export default resolvers;
+module.exports = resolvers;

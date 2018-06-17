@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios');
 
 const Reviews = {
   getAll() {
@@ -9,4 +9,4 @@ const Reviews = {
   },
 };
 
-export { Reviews };
+module.exports = { Reviews: Reviews };
